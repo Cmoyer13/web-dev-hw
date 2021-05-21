@@ -1,0 +1,7 @@
+Briefly describe one way how data travels on the internet. In packets, where they will the travel from one machine to another until they get to their final destination and the recreate/reform the message back together.
+
+What is the relationship between an IP address and the DNS? An IP addresses is assigned to any network to clarify it on a given network where as DNS is used to help covert references alphabetically on a servers IP address.
+
+What is a cookie? text files that hold small pieces of data.
+
+List the the three basic parts of a URL. Protocol, domaine name, and the path.
