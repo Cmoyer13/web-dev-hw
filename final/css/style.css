@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+/*----------------------
+| CSS for General Styling |
+  ----------------------*/
+
+  /* SITE-WIDE ELEMENTS: */
+  body{
+    background-color: grey;
+    background-image: url('..images/site-border.png');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  }
+  h1, span{
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    color: lightblue;
+    text-align: center;
+  }
+  h3{
+    font-family: 'Arvo-B' Georgia, serif;
+    font-size: 1em;
+  }
+  q{
+    font-family: 'Arvo-BI', Georgia, serif;
+    font-size: 2em;
+  }
+  a{
+    font-family: 'Arvo-B', Georgia, serif;
+    text-decoration: none;
+    color: inherit;
+  }
+  *{
+    font-family: 'Arvo', Georgia, serif;
+    color: #000;
+  }
+
+
+  /*LAYOUT AREAS: */
+  .main-container{
+    width:60%;
+    max-width: 700px;
+    margin: 3em auto;
+    padding: 3em;
+
+    background-color: #FFF;
+    border-right: 15px solid #999;
+    border-bottom: 15px solid #666;
+  }
+  header {
+
+  }
+  main{
+    text-align: justify;
+    margin: 3em 8;
+  }
+  footer {
+    text-align: center;
+    font-size: 75em;
+    margin-top: 3em;
+  }
+
+
+  /*LAYOUT PIECES: */
+
+  /* Site informations */
+  .site-heading {
+    width: 50%;
+    margin: 4em auto;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+
+    border: 5px double cadetblue;
+
+    text-align: center;
+  }
+#site-title {
+  margin: .5em;
+  line-height: 1em;
+  font-size: 3em;
+}
+#site-slogan {
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: darkcyan;
+}
+.site-logo {
+  margin: auto;
+  margin-top: -68px;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.under-img {
+  width: 60px;
+  height: 60px;
+  z-image: 3;
+}
+.over-img {
+  width: 60px;
+  height: 60px;
+  z-image: 4;
+}
+.over-img:hover {
+  opacity: 0;
+}
+
+/* Blog Posts */
+.post-title {
+
+}
+.post-subtitle {
+  matrgin-left: 15px;
+  padding: 5px;
+  border-left: 5px double darkcyan;
+}
+.post-content {
+  line-height: 1.45em;
+}
+.post-content p {
+  margin: 2em 0;
+}
+.post-content p:first-letter {
+  margin-right: 1px;
+  font-size: 2em;
+  font-weight: 400;
+  color: chocolate;
+}
+
+
+/* Pull Quotes */
+.pull-quote {
+  width: 30%;
+  margin: 2em 0 0 2em;
+  padding: 1.5em;
+  min-width: 200px;
+  float: right;
+
+  background image: url('../images/quote-left.svg');
+  background size: 75px 75px;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  text-align: right;
+}
+.pull-quote:hover {
+  background image: url('../images/quote-right.svg');
+  background size: 75px 75px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+/* Read more */
+.archives-link {
+  width: 15em;
+  margin: auto;
+  min-height: 5em
+}
+.button {
+  margin: auto;
+  position: relative;
+
+  background-color: honeydew;
+  border-color: #999 #666 #666 #999;
+  border-width: 10px 15px 15px 10px;
+  border-style: solid;
+}
+.button h3 {
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.button h3:hover {
+  text-decoration: underline overline;
+  text-decoration-color: honeydew;
+  text-decoration-style: wavy;
+}
+.button h3:active {
+  color: darkcyan;
+  text-decoration: underline overline;
+  text-decoration-color: darkcyan;
+  text-decoration-style: wavy;
+}
+
+/* Decorative line break */
+.line {
+  border-top: 5px double darkcyan;
+}
+/*------------------
+| CSS for Navagation Menu |
+ -----------------------*/
+
+ /* MENU BAR CONTAINER): */
+ menu{
+   margin: 0px;
+   padding: 0px;
+   background-color: darkcyan;
+ }
+
+
+ /*TOP-LEVEL LINKS: */
+ #site-links{
+   margin: 0;
+   padding: 0;
+  display: inline-block;
+ }
+#site-links .menu-item {
+  width: 6em;
+  padding: .5em 1em;
+  display: inline-block;
+
+  background-color: darkcyan;
+
+  text-align: center;
+  color: #FFF;
+}
+#site-links .menu-item:hover {
+  background-color: darkcyan;
+
+  color: honeydew;
+  text-decoration: underline overline;
+  text-decoration-color: honeydew;
+  text-decoration-style: wavy;
+}
+
+ /* DROPDOWN: */
+#site-links .dropdown {
+  display: inline-block;
+  width: 6em;
+}
+#site-links .dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: darkcyan;
+  z-index: 5;
+}
+#site-links .dropdown-content a {
+  color: #FFF;
+  font-family: 'Arvo', Georgia, serif;
+}
+#site-links .dropdown-content a:hover {
+  color: darkcyan;
+  font-weight: 980
+}
+#site-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+#site-links .dropdown-item {
+  min-width: 6em;
+  padding: .5em 1em;
+  display: block;
+
+  text-align: center;
+}
+.dropdown-item:hover {
+  background-color: darkcyan;
+}
+
+ /* SOCIAL MEDIA ACCOUNTS: */
+ #social-links{
+   padding: .5em;
+   display: inline-block;
+   float: right;
+ }
+ #social-link .social-item {
+   margin: 0 5px;
+ }
